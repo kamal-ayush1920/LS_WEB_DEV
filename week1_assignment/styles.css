@@ -1,0 +1,351 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size:x-large ;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+  .container{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .item{
+    flex: 0 0 100vh;
+    display: flex;
+
+ 
+  }
+  .intro{
+    background: url('Assets/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro  .header {
+    font-size: 4vw;
+    font-family: "Monoton", sans-serif;
+  }
+
+  .txt a{
+    color: rgb(19, 7, 179);
+    text-decoration:none ;
+  }
+  .txt a:hover{
+    color: rgb(21, 189, 240);
+  }
+  .intro > .intro-text{
+    margin-top: 10px;
+  }
+
+  .overview{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background-color: blanchedalmond;
+  }
+
+.overview h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 250px;
+
+}
+
+.overview img {
+  height: auto;
+  height: 30vh;
+  width: 20vw;
+  margin-right: 700px;
+}
+
+
+.overview {
+  background-color: blanchedalmond;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.subclass{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.section {
+  flex: 1;
+  align-items:center;
+  border: 5px solid black;
+  border-radius: 50px;
+  margin:5px 5px 5px 5px;
+  
+}
+
+.section img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+  float: left;
+  border-radius: 50px;
+}
+
+.section p {
+
+  margin: 0;
+ 
+}
+  .highlight{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .subclass1{
+    flex: 1;
+    border: 5px solid black;
+    align-items:center;
+    border-radius: 50px;
+    margin:5px 5px 5px 5px;
+    padding: 0;
+    flex-shrink: 5;
+    
+  }
+  .subclass1 p{
+    text-align: left;
+  }
+  .subclass1 h1{
+    text-align: center;
+    
+    
+  }
+  .subclass1 img{
+    max-width: 200px;
+    height: 100px;
+    margin-right: 20px;
+    float: left;
+    border-radius: 50px;
+  }
+  .subclass1 p{
+    margin: 0;
+  }
+  .beginn{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+  }
+  .beginn h1{
+    text-align: center;
+    text-decoration: underline;
+  }
+  .subclass2 img{
+    height: 50px;
+    width: 50px;
+  }
+  .quiz-container {
+    background-color: rgb(110, 238, 93);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.quiz-header {
+    margin-bottom: 20px;
+}
+
+.quiz-header h2 {
+    margin: 0;
+}
+
+.quiz-header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-header li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .intro .header {
+    font-size: 5vw;
+  }
+
+  .overview h1,
+  .highlight h1,
+  .beginn h1 {
+    font-size: 2em;
+  }
+
+  .overview img,
+  .subclass1 img,
+  .subclass2 img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .quiz-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: large;
+  }
+
+  .intro .header {
+    font-size: 6vw;
+  }
+
+  .overview h1,
+  .highlight h1,
+  .beginn h1 {
+    font-size: 1.5em;
+  }
+
+  .overview img,
+  .subclass1 img,
+  .subclass2 img {
+    max-width: 60%;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .quiz-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+
+  .subclass {
+    flex-direction: column;
+  }
+
+  .section {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: medium;
+  }
+
+  .intro .header {
+    font-size: 8vw;
+  }
+
+  .overview h1,
+  .highlight h1,
+  .beginn h1 {
+    font-size: 1.2em;
+  }
+
+  .overview img,
+  .subclass1 img,
+  .subclass2 img {
+    max-width: 80%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .quiz-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
