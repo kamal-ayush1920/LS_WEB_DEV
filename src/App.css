@@ -1,0 +1,24 @@
+.app {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.card {
+  background-color: inherit;
+  color: inherit;
+}
+
+.btn-secondary {
+  background-color: inherit;
+  color: inherit;
+  border-color: #ccc;
+}
